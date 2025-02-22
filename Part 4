@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+}
+
+article {
+    flex: 3;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Images */
+img {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 150px;
+    height: auto;
+}
