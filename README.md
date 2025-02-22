@@ -1,5 +1,3 @@
-# Web-Dev
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,43 +21,6 @@
     </ul>
 </body>
 </html>
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    padding: 0;
-}
-
-/* h1 Styles */
-h1 {
-    color: hotpink; /* Pink color */
-    border-bottom: 10px dotted purple;
-}
-
-/* h2 Styles */
-h2 {
-    font-style: italic; /* Italic text */
-}
-
-/* Contact Details Styles */
-ul {
-    background-color: #eeeeee;
-    border: 5px solid purple;
-    padding: 20px;
-    list-style-type: none;
-}
-
-/* Link Styles */
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    color: green;
-    text-decoration: underline;
-}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -75,19 +36,7 @@ a:hover {
     </div>
 </body>
 </html>
-/* Cool Box Styles */
-.cool-box {
-    width: 300px;
-    height: 200px;
-    margin: 50px auto; /* Center horizontally */
-    padding: 20px;
-    background-color: #f0f0f0; /* Light gray background */
-    border: 1px solid #ccc; /* Border */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5); /* Multiple shadows */
-    font-size: 1.2rem; /* Use rem units */
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%); /* Gradient */
-}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,51 +66,7 @@ a:hover {
     </footer>
 </body>
 </html>
-/* Fonts */
-@font-face {
-    font-family: 'CustomFont1';
-    src: url('font1.woff2') format('woff2');
-}
 
-@font-face {
-    font-family: 'CustomFont2';
-    src: url('font2.woff2') format('woff2');
-}
-
-/* General Styles */
-body {
-    font-family: 'CustomFont1', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2 {
-    font-family: 'CustomFont2', serif;
-}
-
-/* Navigation Bar */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -196,53 +101,3 @@ nav ul li a:hover {
     </footer>
 </body>
 </html>
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navigation Bar */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    position: sticky;
-    top: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Main Layout */
-main {
-    display: flex;
-}
-
-article {
-    flex: 3;
-    padding: 20px;
-}
-
-aside {
-    flex: 1;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-/* Images */
-img {
-    float: left;
-    margin: 0 15px 15px 0;
-    width: 150px;
-    height: auto;
-}
