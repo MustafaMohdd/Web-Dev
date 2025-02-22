@@ -75,3 +75,191 @@ a:hover {
     </div>
 </body>
 </html>
+/* Cool Box Styles */
+.cool-box {
+    width: 300px;
+    height: 200px;
+    margin: 50px auto; /* Center horizontally */
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5); /* Multiple shadows */
+    font-size: 1.2rem; /* Use rem units */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%); /* Gradient */
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Typesetting Homepage</title>
+    <link rel="stylesheet" href="typesetting.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Homepage</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>About Me</h2>
+            <p>Hi, I'm Your Name! I love web development and design.</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+</body>
+</html>
+/* Fonts */
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('font1.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'CustomFont2';
+    src: url('font2.woff2') format('woff2');
+}
+
+/* General Styles */
+body {
+    font-family: 'CustomFont1', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'CustomFont2', serif;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Layout Comprehension</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <header>
+        <h1>Layout Comprehension</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Article Title</h2>
+            <p>This is the main content of the article.</p>
+            <img src="image1.jpg" alt="Image 1">
+        </article>
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+</body>
+</html>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+}
+
+article {
+    flex: 3;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Images */
+img {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 150px;
+    height: auto;
+}
+# CSS Assignment 3
+
+This repository contains the files for Assignment 3 - CSS, covering the following tutorials:
+1. Styling a Biography Page
+2. A Cool Looking Box
+3. Typesetting a Homepage
+4. Fundamental Layout Comprehension
+
+## Published Pages
+- [Biography Page](https://your-username.github.io/CSS-Assignment-3/biography.html)
+- [Cool Looking Box](https://your-username.github.io/CSS-Assignment-3/cool-box.html)
+- [Typesetting Homepage](https://your-username.github.io/CSS-Assignment-3/typesetting.html)
+- [Layout Comprehension](https://your-username.github.io/CSS-Assignment-3/layout.html)
+
+## How to View
+1. Clone the repository.
+2. Open the HTML files in a web browser.
