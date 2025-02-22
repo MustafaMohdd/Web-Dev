@@ -60,3 +60,18 @@ a:hover {
     color: green; /* Green color on hover */
     text-decoration: underline; /* Underline on hover */
 }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cool Looking Box</title>
+    <link rel="stylesheet" href="cool-box.css">
+</head>
+<body>
+    <div class="cool-box">
+        <h1>Cool Looking Box</h1>
+        <p>This is a cool-looking box with a gradient background, rounded corners, and shadows.</p>
+    </div>
+</body>
+</html>
