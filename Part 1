@@ -1,0 +1,37 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+}
+
+/* h1 Styles */
+h1 {
+    color: hotpink; /* Pink color */
+    border-bottom: 10px dotted purple; /* Purple dotted border */
+}
+
+/* h2 Styles */
+h2 {
+    font-style: italic; /* Italic text */
+}
+
+/* Contact Details Styles */
+ul {
+    background-color: #eeeeee; /* Light gray background */
+    border: 5px solid purple; /* Purple border */
+    padding: 20px; /* Padding inside the box */
+    list-style-type: none; /* Remove bullet points */
+}
+
+/* Link Styles */
+a {
+    color: #007BFF; /* Default link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: green; /* Green color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
