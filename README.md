@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Your Name - Biography</title>
+    <title>Mustafa - Biography</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Your Name</h1>
+    <h1>Mustafa</h1>
     <div class="job-title">Web Developer</div>
     <p>
-        Hi, I'm Your Name! I'm a web developer with a passion for creating beautiful and functional websites. 
-        I specialize in HTML, CSS, and JavaScript. When I'm not coding, I enjoy hiking, reading, and exploring new technologies.
+        Hi, I'm Mustafa! I'm a web developer with a passion for creating beautiful and functional websites. 
     </p>
 
     <h2>Contact Information</h2>
@@ -62,7 +61,7 @@
         </article>
     </main>
     <footer>
-        <p>&copy; 2023 Your Name</p>
+        <p>&copy; 2023 Mustafa</p>
     </footer>
 </body>
 </html>
