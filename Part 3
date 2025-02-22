@@ -1,25 +1,38 @@
 /* Fonts */
 @font-face {
-    font-family: 'CustomFont1';
-    src: url('font1.woff2') format('woff2');
+    font-family: 'ModernSans';
+    src: url('modern-sans.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'CustomFont2';
-    src: url('font2.woff2') format('woff2');
+    font-family: 'ClassicSerif';
+    src: url('classic-serif.woff2') format('woff2');
 }
 
 /* General Styles */
 body {
-    font-family: 'CustomFont1', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
+    font-family: 'ModernSans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 h1, h2 {
-    font-family: 'CustomFont2', serif;
+    font-family: 'ClassicSerif', serif;
+    color: #2c3e50; /* Dark blue */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
 }
 
 /* Navigation Bar */
@@ -28,18 +41,23 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: #2c3e50; /* Dark blue */
+    padding: 15px 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #ecf0f1; /* Light gray */
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #e67e22; /* Orange on hover */
+    text-decoration: none;
 }
