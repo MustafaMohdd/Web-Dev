@@ -246,20 +246,3 @@ img {
     width: 150px;
     height: auto;
 }
-# CSS Assignment 3
-
-This repository contains the files for Assignment 3 - CSS, covering the following tutorials:
-1. Styling a Biography Page
-2. A Cool Looking Box
-3. Typesetting a Homepage
-4. Fundamental Layout Comprehension
-
-## Published Pages
-- [Biography Page](https://your-username.github.io/CSS-Assignment-3/biography.html)
-- [Cool Looking Box](https://your-username.github.io/CSS-Assignment-3/cool-box.html)
-- [Typesetting Homepage](https://your-username.github.io/CSS-Assignment-3/typesetting.html)
-- [Layout Comprehension](https://your-username.github.io/CSS-Assignment-3/layout.html)
-
-## How to View
-1. Clone the repository.
-2. Open the HTML files in a web browser.
