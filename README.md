@@ -34,7 +34,7 @@ body {
 /* h1 Styles */
 h1 {
     color: hotpink; /* Pink color */
-    border-bottom: 10px dotted purple; /* Purple dotted border */
+    border-bottom: 10px dotted purple;
 }
 
 /* h2 Styles */
@@ -44,21 +44,21 @@ h2 {
 
 /* Contact Details Styles */
 ul {
-    background-color: #eeeeee; /* Light gray background */
-    border: 5px solid purple; /* Purple border */
-    padding: 20px; /* Padding inside the box */
-    list-style-type: none; /* Remove bullet points */
+    background-color: #eeeeee;
+    border: 5px solid purple;
+    padding: 20px;
+    list-style-type: none;
 }
 
 /* Link Styles */
 a {
-    color: #007BFF; /* Default link color */
-    text-decoration: none; /* Remove underline */
+    color: #007BFF;
+    text-decoration: none;
 }
 
 a:hover {
-    color: green; /* Green color on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: green;
+    text-decoration: underline;
 }
 
 <!DOCTYPE html>
