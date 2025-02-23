@@ -24,7 +24,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Cool Looking Box</title>
     <link rel="stylesheet" href="cool-box.css">
 </head>
 <body>
@@ -39,7 +38,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Typesetting Homepage</title>
     <link rel="stylesheet" href="typesetting.css">
 </head>
 <body>
@@ -69,7 +67,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Layout Comprehension</title>
     <link rel="stylesheet" href="layout.css">
 </head>
 <body>
