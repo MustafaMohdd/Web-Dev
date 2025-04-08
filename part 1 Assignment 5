@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Author: Your Name -->
+  <!-- Date: April 8, 2025 -->
+  <!-- Filename: index.html -->
+  <!-- Description: Final accessibility-enhanced page -->
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#main-content">Skip to content</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+      <h1>Making the Web Accessible</h1>
+      <p>Accessibility is essential for developers and organizations that want to create high-quality websites and web tools.</p>
+
+      <h2>Featured Image</h2>
+      <img src="accessibility.jpg" alt="Illustration showing people with various disabilities using technology" />
+
+      <h2>Listen to Our Podcast</h2>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3" />
+        <track src="captions.vtt" kind="captions" srclang="en" label="English captions" default />
+        Your browser does not support the audio element. You can <a href="audio.mp3">download the audio</a> instead.
+      </audio>
+      <p>Transcript: In this episode, we discuss the importance of web accessibility for everyone...</p>
+
+      <h2>Search the Site</h2>
+      <form action="/search" method="get">
+        <label for="search" class="sr-only">Search the site</label>
+        <input type="text" id="search" name="search" placeholder="Search…" />
+        <button type="submit">Search</button>
+      </form>
+
+      <h2>Leave a Comment</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <h2>Accessibility Checklist</h2>
+      <table>
+        <caption>Checklist for web accessibility compliance</caption>
+        <thead>
+          <tr>
+            <th scope="col">Criteria</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Semantic HTML</th>
+            <td>✅ Done</td>
+          </tr>
+          <tr>
+            <th scope="row">Color Contrast</th>
+            <td>✅ Done</td>
+          </tr>
+          <tr>
+            <th scope="row">Keyboard Navigation</th>
+            <td>✅ Done</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Comments</h2>
+      <div id="toggle-comments" role="button" tabindex="0" aria-pressed="false">
+        Show Comments
+      </div>
+      <div id="comments" hidden>
+        <p>User1: Great article!</p>
+        <p>User2: Very helpful, thank you!</p>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
