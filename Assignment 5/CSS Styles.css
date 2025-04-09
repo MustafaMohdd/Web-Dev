@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 1rem;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #4caf50;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Navigation */
+  .nav {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Search */
+  .search {
+    margin-top: 0.5rem;
+  }
+  
+  .search input[type="search"],
+  .search input[type="submit"] {
+    padding: 0.3rem;
+    margin-left: 0.2rem;
+    font-size: 1rem;
+  }
+  
+  /* Main content */
+  main {
+    background-color: white;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Articles and sections */
+  article > header {
+    margin-bottom: 1.5rem;
+  }
+  
+  section {
+    margin-bottom: 1.5rem;
+  }
+  
+  h2, h3 {
+    font-family: 'Sonsie One', cursive;
+    color: #2c3e50;
+  }
+  
+  figure {
+    margin: 1rem 0;
+  }
+  
+  figcaption {
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.3rem;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  table caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Visually hidden (for screen readers) */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  

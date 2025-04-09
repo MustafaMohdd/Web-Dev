@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility Assessment</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <h1>Welcome to our wildlife website</h1>
+  </header>
+
+  <nav class="nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Our team</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+    <form class="search" role="search" aria-label="Site search">
+      <label for="search-input" class="visually-hidden">Search</label>
+      <input type="search" id="search-input" name="q" placeholder="Search query" />
+      <input type="submit" value="Go!" />
+    </form>
+  </nav>
+
+  <main>
+    <article>
+      <header>
+        <h2>The trouble with Bears</h2>
+        <p>By Evan Wild</p>
+      </header>
+
+      <section>
+        <p>
+          Tall, lumbering, angry, dangerous. The real live bears of this world are proud, independent creatures, self-serving and always on the hunt for food. Nothing like the bears you see on TV, like Baloo from renowned documentary, <em>The Jungle Book</em>.
+        </p>
+        <p>
+          So what are bears really like, and why does the world's media portray them with such a skewed vision? In this article we try to answer those questions, and give you a real insight into the life of the bear.
+        </p>
+      </section>
+
+      <section>
+        <h3>Types of Bear</h3>
+        <p>
+          Bears come in two varieties — large and medium. You don't get small bears. If you have seen a small bear, then it was in fact probably a baby bear (cub) from another species.
+        </p>
+        <p>
+          Bears can also be classified in terms of their habitat — both large and medium bears are just as comfortable in a city apartment or a rural farm setting.
+        </p>
+      </section>
+
+      <section>
+        <h3>Bear Audio</h3>
+        <p>Listen to what bears sound like:</p>
+        <audio controls aria-label="Bear sounds">
+          <source src="media/bear.mp3" type="audio/mpeg" />
+          <source src="media/bear.ogg" type="audio/ogg" />
+          Your browser does not support the audio element. Here is a <a href="media/bear.mp3">link to the audio file</a>.
+        </audio>
+      </section>
+
+      <section>
+        <h3>Bear Images</h3>
+        <figure>
+          <img src="media/wild-bear.jpg" alt="A wild bear in its natural habitat" />
+          <figcaption>Wild bear in the forest</figcaption>
+        </figure>
+        <figure>
+          <img src="media/urban-bear.jpg" alt="An urban bear roaming through city streets" />
+          <figcaption>Urban bear exploring a city</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>Bear Table</h3>
+        <table>
+          <caption>Bear Sightings by Region (2023)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Region</th>
+              <th scope="col">Sightings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>North America</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>Europe</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>Asia</td>
+              <td>210</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wildlife Watch. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
