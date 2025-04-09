@@ -2,97 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accessible Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessibility Troubleshooting</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Author: Your Name -->
-  <!-- Date: April 8, 2025 -->
-  <!-- Filename: index.html -->
-  <!-- Description: Final accessibility-enhanced page -->
-
   <header>
+    <h1>Accessibility troubleshooting</h1>
     <nav>
       <ul>
-        <li><a href="#main-content">Skip to content</a></li>
         <li><a href="#">Home</a></li>
         <li><a href="#">Articles</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main-content">
+  <main>
     <article>
-      <h1>Making the Web Accessible</h1>
-      <p>Accessibility is essential for developers and organizations that want to create high-quality websites and web tools.</p>
+      <section>
+        <h2>Introduction</h2>
+        <p>This page demonstrates how to troubleshoot and improve accessibility issues using semantic HTML, proper labels, and ARIA roles where necessary.</p>
+      </section>
 
-      <h2>Featured Image</h2>
-      <img src="accessibility.jpg" alt="Illustration showing people with various disabilities using technology" />
+      <section>
+        <h2>Image with alt text</h2>
+        <img src="accessibility.jpg" alt="Illustration showing people with disabilities using technology" />
+      </section>
 
-      <h2>Listen to Our Podcast</h2>
-      <audio controls>
-        <source src="audio.mp3" type="audio/mp3" />
-        <track src="captions.vtt" kind="captions" srclang="en" label="English captions" default />
-        Your browser does not support the audio element. You can <a href="audio.mp3">download the audio</a> instead.
-      </audio>
-      <p>Transcript: In this episode, we discuss the importance of web accessibility for everyone...</p>
+      <section>
+        <h2>Audio with captions and transcript</h2>
+        <audio controls>
+          <source src="example-audio.mp3" type="audio/mpeg" />
+          <track src="captions.vtt" kind="captions" srclang="en" label="English" default />
+          Your browser does not support the audio element.
+        </audio>
+        <p>Transcript: In this podcast, we discuss how accessibility helps everyone...</p>
+      </section>
 
-      <h2>Search the Site</h2>
-      <form action="/search" method="get">
-        <label for="search" class="sr-only">Search the site</label>
-        <input type="text" id="search" name="search" placeholder="Search…" />
-        <button type="submit">Search</button>
-      </form>
+      <section>
+        <h2>Search</h2>
+        <form action="/search" method="get">
+          <label for="search">Search this site:</label>
+          <input type="text" id="search" name="search" />
+          <button type="submit">Search</button>
+        </form>
+      </section>
 
-      <h2>Leave a Comment</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" />
+      <section>
+        <h2>Comments</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input id="name" name="name" type="text" />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" />
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" />
 
-        <label for="comment">Comment</label>
-        <textarea id="comment" name="comment"></textarea>
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment"></textarea>
 
-        <button type="submit">Submit</button>
-      </form>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
 
-      <h2>Accessibility Checklist</h2>
-      <table>
-        <caption>Checklist for web accessibility compliance</caption>
-        <thead>
-          <tr>
-            <th scope="col">Criteria</th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Semantic HTML</th>
-            <td>✅ Done</td>
-          </tr>
-          <tr>
-            <th scope="row">Color Contrast</th>
-            <td>✅ Done</td>
-          </tr>
-          <tr>
-            <th scope="row">Keyboard Navigation</th>
-            <td>✅ Done</td>
-          </tr>
-        </tbody>
-      </table>
+      <section>
+        <h2>Accessibility checklist</h2>
+        <table>
+          <caption>Web accessibility checklist</caption>
+          <thead>
+            <tr>
+              <th scope="col">Checklist item</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Use semantic HTML</th>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <th scope="row">Provide alt text for images</th>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <th scope="row">Ensure proper color contrast</th>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <th scope="row">Keyboard accessible interactions</th>
+              <td>✅</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-      <h2>Comments</h2>
-      <div id="toggle-comments" role="button" tabindex="0" aria-pressed="false">
-        Show Comments
-      </div>
-      <div id="comments" hidden>
-        <p>User1: Great article!</p>
-        <p>User2: Very helpful, thank you!</p>
-      </div>
+      <section>
+        <h2>Reader comments</h2>
+        <button id="toggle-comments" aria-pressed="false" aria-controls="comments">
+          Show comments
+        </button>
+        <div id="comments" hidden>
+          <p><strong>User1:</strong> This was super helpful!</p>
+          <p><strong>User2:</strong> I didn’t realize how much accessibility matters—thank you!</p>
+        </div>
+      </section>
     </article>
   </main>
 
