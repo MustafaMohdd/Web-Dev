@@ -1,114 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Accessibility Troubleshooting</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <title>Accessibility troubleshooting assessment</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Accessibility troubleshooting</h1>
+    <h1>All about bears</h1>
+
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Articles</a></li>
         <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+
+    <form>
+      <label for="search" class="sr-only">Search:</label>
+      <input id="search" name="search" type="text" placeholder="Search">
+      <button type="submit">Go</button>
+    </form>
   </header>
 
   <main>
     <article>
-      <section>
-        <h2>Introduction</h2>
-        <p>This page demonstrates how to troubleshoot and improve accessibility issues using semantic HTML, proper labels, and ARIA roles where necessary.</p>
-      </section>
+      <h2>Bears</h2>
+      <p>Bears are mammals that belong to the family Ursidae. They are classified as caniforms, or doglike carnivorans.</p>
 
-      <section>
-        <h2>Image with alt text</h2>
-        <img src="accessibility.jpg" alt="Illustration showing people with disabilities using technology" />
-      </section>
+      <h3>Species</h3>
+      <p>There are eight species of bears: American black bear, brown bear, polar bear, Asiatic black bear, Andean bear, panda bear, sloth bear, and sun bear.</p>
 
-      <section>
-        <h2>Audio with captions and transcript</h2>
-        <audio controls>
-          <source src="example-audio.mp3" type="audio/mpeg" />
-          <track src="captions.vtt" kind="captions" srclang="en" label="English" default />
-          Your browser does not support the audio element.
-        </audio>
-        <p>Transcript: In this podcast, we discuss how accessibility helps everyone...</p>
-      </section>
+      <h3>Habitats</h3>
+      <p>Bears are found in North and South America, Europe, and Asia. They inhabit a wide range of environments including forests, mountains, tundra, and grasslands.</p>
 
-      <section>
-        <h2>Search</h2>
-        <form action="/search" method="get">
-          <label for="search">Search this site:</label>
-          <input type="text" id="search" name="search" />
-          <button type="submit">Search</button>
-        </form>
-      </section>
+      <img src="media/wild-bear.jpg" alt="A bear in the wild">
+      <img src="media/urban-bear.jpg" alt="A bear in an urban area">
 
-      <section>
-        <h2>Comments</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input id="name" name="name" type="text" />
-
-          <label for="email">Email:</label>
-          <input id="email" name="email" type="email" />
-
-          <label for="comment">Comment:</label>
-          <textarea id="comment" name="comment"></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-
-      <section>
-        <h2>Accessibility checklist</h2>
-        <table>
-          <caption>Web accessibility checklist</caption>
-          <thead>
-            <tr>
-              <th scope="col">Checklist item</th>
-              <th scope="col">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Use semantic HTML</th>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <th scope="row">Provide alt text for images</th>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <th scope="row">Ensure proper color contrast</th>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <th scope="row">Keyboard accessible interactions</th>
-              <td>✅</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Reader comments</h2>
-        <button id="toggle-comments" aria-pressed="false" aria-controls="comments">
-          Show comments
-        </button>
-        <div id="comments" hidden>
-          <p><strong>User1:</strong> This was super helpful!</p>
-          <p><strong>User2:</strong> I didn’t realize how much accessibility matters—thank you!</p>
-        </div>
-      </section>
+      <h3>Sounds</h3>
+      <p>Listen to what a bear sounds like:</p>
+      <audio controls>
+        <source src="media/bear.mp3" type="audio/mpeg">
+        <source src="media/bear.ogg" type="audio/ogg">
+        Your browser does not support the audio element. You can <a href="media/bear.mp3">download the audio file here</a>.
+      </audio>
+      <p class="sr-only">Audio description: This is the sound of a bear growling.</p>
     </article>
+
+    <section>
+      <h2>Comment form</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text">
+
+        <label for="comment">Comment:</label>
+        <input id="comment" name="comment" type="text">
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <button id="toggle-comments" aria-pressed="false">Show/Hide Comments</button>
+
+      <div id="comments">
+        <p>No comments yet</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Bear statistics</h2>
+      <table>
+        <caption>Comparison of bear populations in different regions</caption>
+        <thead>
+          <tr>
+            <th scope="col">Region</th>
+            <th scope="col">Population</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">North America</th>
+            <td>200,000</td>
+          </tr>
+          <tr>
+            <th scope="row">Europe</th>
+            <td>50,000</td>
+          </tr>
+          <tr>
+            <th scope="row">Asia</th>
+            <td>100,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
